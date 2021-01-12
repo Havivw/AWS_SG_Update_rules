@@ -4,7 +4,7 @@ IPSetter is a simple tool that allow you to change a specific rule in Security G
 
 ## Prerequisites
 
-Create Api key on AWS with atleast that policy.
+Create Api key on AWS with at least that policy.
 ```shell script
 {
     "Version": "2012-10-17",
@@ -62,6 +62,18 @@ With default value
     c:\> ipsetter
     INFO - Run Change IP Address on PT-GroupPolicy (Default) Security Group on AWS.
     ERROR - Your IP x.x.x.x/32 is already exists on the Security Group!
+```
+Help
+```shell script
+ipsetter -h
+usage: ipsetter [-h] [--name NAME] [--ip IP]
+
+Amazon Security Group Updater
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --name NAME, -n NAME  The user's name (The description in the security group)
+  --ip IP, -i IP        The specific IP adress to set for your security group. default: current external ip
 ```
 
 ## Contributions..

@@ -38,7 +38,7 @@ def parse_argumets():
     parser = argparse.ArgumentParser(description='Amazon Security Group Updater')
     parser.add_argument('--name', '-n', help="The user's name (The description in the security group)", type=str,
                         required=False, default=AWS_USER_IN_DESCRIPTION)
-    parser.add_argument('--ip', '-i', help="The specific IP adress to set for your security group", type=str,
+    parser.add_argument('--ip', '-i', help="The specific IP adress to set for your security group. default: current external ip", type=str,
                         required=False, default='')
     return parser.parse_args()
 
