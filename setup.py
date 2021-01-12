@@ -3,12 +3,12 @@ from setuptools import setup, find_packages
 with open('requirements.txt') as f: 
     requirements = f.readlines() 
   
-long_description = "IP update for Security group rules on amazon"
+long_description = "IP setter for amazon - for OTORIO's PT team"
   
 setup( 
         name ='ipsetter',
         version ='1.0.0', 
-        description ='Update Your Security Group',
+        description ='IP setter',
         long_description = long_description, 
         long_description_content_type ="text/markdown",
         packages = find_packages(),
