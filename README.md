@@ -1,5 +1,5 @@
 # IPSetter
-​
+
 IPSetter is a simple tool that allow you to change a specific rule in Security Group on AWS via description.
 
 ## Prerequisites
